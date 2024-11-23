@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<div class="header-container">
+    <nav class="navColor navbar navbar-expand-lg fixed-top text-white">
+        <div class="container-fluid text-white">
+            <a class="navbar-brand" href="/"><img src="/images/icon.png" alt="logo" class="logo-img">
+                <span class="logo-text text-white">Shortii</span></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <% if(locals.user){ %>
+                    <span class="navbar-text px-4">
+                        <a class="nav-link active text-white" aria-current="page" href="/user/profile">
+                            <%= locals.user.fullName %>
+                        </a>
+                    </span>
+                    <span class="navbar-text px-4">
+                        <a class="nav-link active text-white" aria-current="page" href="/user/homepage">Shortener</a>
+                    </span>
+                    <span class="navbar-text px-4">
+                        <a class="nav-link active text-white" aria-current="page" href="/user/analytics">Analytics</a>
+                    </span>
+                    <span class="navbar-text px-4">
+                        <a class="nav-link active text-white" aria-current="page" href="/logout">Sign out</a>
+                    </span>
+                <% } else { %>
+                        <span class="navbar-text px-4">
+                            <a class="nav-link active text-white" aria-current="page" href="/contact-us">Customer support
+                                <img src="/images/customer-support.png" alt="customer-support" class="customer-support-icon"></a>
+                        </span>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+</div>

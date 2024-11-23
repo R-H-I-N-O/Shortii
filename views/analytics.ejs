@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/analytics.css">
+
+<div class="analytics-container">
+    <div class="analytics-content">
+        <h2>URL ANALYTICS</h2>
+        <table>
+            <thead>
+                <th>Sl.no</th>
+                <th>Orginal URL</th>
+                <th>Shortened URL</th>
+                <th>Clicks</th>
+            </thead>
+            <tbody>
+                <% urls.forEach((url,index) => { %>
+                    <tr>
+                        <td><%= index+1 %></td>
+                        <td><%= url.orginalUrl %></td>
+                        <td><a href="http://localhost:8001/<%= url.shortID %>">http://localhost:8001/<%= url.shortID %></a></td>
+                        <td><%= url.visitHistory.length %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/user-homepage.css">
+
+<div class="homepage-container">
+    <div class="homepage-main">
+        <h1>URL SHORTENER</h1>
+        <form method="post" action="/user/generate-url" class="homepage-form">
+            <input type="text" name="url" placeholder="Enter the url to be shortened" required="true"><br><br>
+            <button type="submit">Generate shortURL</button><br><br>
+        </form>
+        <div class="short-url-container">
+            <% if(shortID){ %>
+                <p class="short-url">Shortened URL - <a href="http://localhost:8001/<%= shortID %>">http://localhost:8001/<%= shortID %></a></p>
+            <% } %>
+        </div>
+    
+    </div>
+</div>

@@ -1,0 +1,28 @@
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #4E598C;
+    padding-top: .75rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  footer .main {
+    width: 25%;
+  }
+  
+  footer .main p {
+    color: white;
+    text-align: center;
+  }
+  
+  footer .main p a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  

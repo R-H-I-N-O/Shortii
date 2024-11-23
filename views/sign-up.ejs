@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/sign-up.css">
+
+   <div class="sign-up-main">
+        <form action="/create" method="post" class="sign-up-form pt-5 mt-5 mb-5" enctype="multipart/form-data">
+            <% if(alert!=""){ %>
+                <div class="alert alert-warning" role="alert">
+                  <%= alert %>
+                </div>
+              <% } %>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input name="fullName" type="text" class="form-control" placeholder="Enter your full name" required>    
+            </div>
+            <div class="mb-3">
+                <label for="profilePic" class="form-label">Select your image</label>
+                <input name="profilePic" type="file" class="form-control" required>    
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" placeholder="example@123.com" required>    
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">DOB</label>
+                <input name="dob" type="date" class="form-control" placeholder="xx/xx/xxxx" required>    
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" placeholder="Enter your password"  required>    
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Re enter Password </label>
+                <input name="confirmPassword" type="password" class="form-control" placeholder="ReEnter your password" required>    
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div id="emailHelp" class="form-text pt-2 text-center" ><a href="/sign-in" class="text-decoration-none">Already a user? Sign in.</a></div>
+        </form>
+   </div> 

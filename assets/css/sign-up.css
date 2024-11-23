@@ -1,0 +1,15 @@
+.sign-up-main{
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: none;
+    overflow: hidden; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+}

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/profile.css">
+
+<div class="profile-main">
+    <h1>My Profile</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="<%= user.profilePic %>" class="card-img-top" alt="Profile picture">
+        <div class="card-body">
+          <h5 class="card-title text-center"><%= user.fullName %></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center">Email : <%= user.email %></li>
+          <li class="list-group-item text-center">Date of birth : <%= user.dob %></li>
+        </ul>
+        <div class="card-body">
+        </div>
+      </div>
+</div>

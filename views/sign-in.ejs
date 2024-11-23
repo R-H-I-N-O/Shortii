@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/sign-in.css">
+
+   <div class="sign-in-main">
+    <form action="/login" method="post" class="sign-in-form">      
+        <% if(alert!=""){ %>
+          <div class="alert alert-warning" role="alert">
+            <%= alert %>
+          </div>
+        <% } %>
+        <% if(success!=""){ %>
+          <div class="alert alert-success" role="alert">
+            <%= success %>
+          </div>
+        <% } %>
+        <div class="mb-3">
+          <label for="email" class="form-label">Username</label>
+          <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="example@123.com" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div id="emailHelp" class="form-text pt-2 text-center" ><a href="/sign-up" class="text-decoration-none">Not a user? Create new account.</a></div>
+      </form>
+   </div> 

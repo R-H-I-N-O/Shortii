@@ -1,0 +1,16 @@
+.sign-in-main{
+    box-sizing: border-box;
+    padding-top: 10vh;
+    min-height: 100vh;
+    max-height: none;
+    overflow: hidden; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
